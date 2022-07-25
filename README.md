@@ -1,6 +1,8 @@
 # Jsx-Renderer
 
-This is a basic implementation of how JSX (React elements) is constructed.
-I created this project to understand the how of injecting the virtual DOM to the real DOM - I'm curious, yes!
+This is an implementation of how JSX (React elements) is constructed.
+I did this project to understand how the virtual DOM relates to the real DOM - not much of a big deal.
 
 ## Acknowledgment
+
+[WTF is JSX](https://jasonformat.com/wtf-is-jsx/)
