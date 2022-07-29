@@ -1,17 +1,19 @@
-const jsxFunction = (tagName, attributes, ...Args) => {
+`use strict`;
+const newJsxTag = <h1></h1>;
+const jsxTraverser = (jsx) => {
+  let jsxString = jsx.toString();
+  if (!(jsxString.StartsWith && jsx.EndsWith)) {
+  }
+};
+const jsxFunction = (tagName, props, ...Args) => {
   // for nested arrays
   let children = Args.length ? Args.flat(Infinity) : null;
-  return { tagName, attributes, children };
+  return { tagName, props, children };
 };
 function jsxRenderer(node) {
   let newNode = document.createElement(node.tagName);
   let nodeAttr = node.attributes || {};
   // copy attributes
-  Object.keys(a).reduce((acc, current), []);
-  (node.children || []).forEach(
-    (
-      child // using recursion because child might contain other nodes
-    ) => newNode.appendChild(jsxRenderer(child))
-  );
+
   return newNode;
 }
